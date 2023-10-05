@@ -1,0 +1,11 @@
+<config>
+  <logging multithreaded="true" pattern="%^[%Y-%m-%d %H:%M:%S:%e][%n][%l]%$ %v" level="@LOG_LEVEL@">
+    <sinks>
+      <stdout color="@LOG_STDOUT_COLORS@"></stdout>
+      <file name="@LOG_FILE_NAME@" truncate="@LOG_FILE_TRUNCATE@"></file>
+    </sinks>
+  </logging>
+  <assets>
+    <path>@PATH_TO_ASSETS@</path>
+  </assets>
+</config>
